@@ -1,0 +1,132 @@
+	<div class="wd_contain">
+			<!-- <div class="wd_bg"></div> -->
+			<div class="wd_con">
+				<div class="wd_banner_opa">
+					<div class="wd_txt">
+						<p>BLOG&nbsp;HOME</p>
+						<div class="wd_line"></div>
+						<p>Helena is a freelance fashion house specialiasing in print designs and combining</br>fabrics. Our stores can be found all over the world.</p>
+					</div>
+				</div>
+				<div class="wd_list">
+					<ul>
+						<li><a href="#" class="glyphicon glyphicon-home">&nbsp;》</a></li>
+						<li><a href="#">PAGES&nbsp;》</a></li>
+						<li><a href="#">OTHER&nbsp;》</a></li>
+						<li><a href="#">BLOG</a></li>
+					</ul>
+					<ol>
+						<li><a href="#" class="glyphicon glyphicon-cog"></a></li>
+						<li><a href="#" class="glyphicon glyphicon-trash"></a></li>
+						<li><a href="#" class="glyphicon glyphicon-home"></a></li>
+					</ol>
+				</div>
+				<div class="wd_boot_box" id="row" ng-controller="render_1">
+					<div class="wd_boot_left col-md-8">
+						<div class="wd_left_box1">
+							<div class="wd_img">
+								<img src="img/ban3.png">
+							</div>
+							<h2>Brand new theme released one</h2>
+							<div class="wd_msg">
+								<ul>
+									<li ng-repeat="j in jsonLeft[2].list"><a href="">{{j}}</a></li>
+								</ul>
+							</div>
+							<div class="TXT">
+								<p class="wd_read_txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							
+
+							<div class="txtBox">
+								Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites
+							</div>
+							<p>
+								It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								<br>
+								<br>
+								There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+							</p>
+							</div>
+						</div>
+						<div class="comments">
+							<h5>comments(<span>5</span>)</h5>
+							<dl>
+								<dt>
+									<img src="img/r4.png">
+								</dt>
+								<dd>
+									<b>Admin</b>
+									<p>
+										Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words
+									</p>
+									<span>Feb 26th, 2015 12:25 am</span>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt>
+									<img src="img/r4.png">
+								</dt>
+								<dd>
+									<b>Admin</b>
+									<p>
+										Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words
+									</p>
+									<span>Feb 26th, 2015 12:25 am</span>
+								</dd>
+							</dl>
+						</div>	
+						<div class="AddComment">
+							<input type="text" placeholder="Your Name - Required" ng-model="name" ng-blur="your_name(name)">
+							<input type="text" placeholder="Your Email - Required" ng-model="email" ng-blur="your_email(email)">
+							<input type="textarea" placeholder="Your Message..." ng-model="msg" ng-blur="your_msg(msg)">
+							<input type="button" value="submit Comment" ng-click="msg_sub()">
+						</div>		
+					</div>
+					<div class="wd_boot_right col-md-4">
+						<div class="wd_pageTopics">
+							<div class="wd_tit">
+								PAGE TOPICE
+							</div>
+							<ul>
+								<li ng-repeat="i in jsonRight">
+									<a href="javascript:void(0)" ng-click="showOl()">
+										{{i.title}}
+										<span></span>
+									</a>
+									<ol ng-show="flag">
+										<li ng-repeat="j in i.content"><a href="#">{{j}}</a></li>
+									</ol>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										Our portfolio
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										Price Plans
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="wd_recentPosts">
+							<div class="wd_tit">
+								RECENT POSTS
+							</div>
+							<dl ng-repeat="i in jsonDl">
+								<dt>
+									<img src="{{i.img}}" alt="">
+								</dt>
+								<dd>
+									<a href="#">{{i.title}}</a>
+									<p>{{i.time}}</p>
+								</dd>
+							</dl>
+						</div>		
+					</div>
+				</div>
+			</div>
+	</div>	
+	<!-- http://wrapbootstrap.com/preview/WB049G842 -->
+

@@ -1,0 +1,154 @@
+*{
+	margin:0;
+	padding:0;
+}
+@mixin pos($p:absolute){
+	position:$p;
+}
+a{
+	text-decoration:none;
+	color:#000;
+}
+a:hover{
+	text-decoration:none;
+}
+b,label{
+	font-weight:normal;
+}
+i{
+	font-style:normal;
+}
+ul,ol li{
+	list-style:none;
+}
+.x_detailcontainer{
+	width:100%;
+	margin:0px auto;
+	height:1200px;
+	@include pos(relative);
+}
+
+.x_detailheader{
+	height:55px;
+	line-height:55px;
+	overflow:hidden;
+	font-size:14px;
+	border-bottom:1px solid black;
+}
+.x_des_conbg{
+	width:100%;
+	height:500px;
+	background:url(../../img/slide2.jpg) no-repeat;
+	//background-size:100% auto;
+	@include pos;
+	left:0;
+	top:0;
+	z-index:5;
+	margin:auto;
+	background-position:center center;
+}
+.x-des_con1{
+	padding-top:20px;
+	height:250px;
+	z-index:100;
+	@include pos;
+	opacity:0.8;
+	color:#fff;
+	left:0;
+	top:19px;
+	width:100%;
+	text-align:center;
+	span{
+		height:2px;
+		width:80px;
+		background:#fff;
+		display:block;
+		margin:auto;
+		margin-bottom:10px;
+	}
+}
+.x-des_con2{
+	z-index:100;
+	@include pos;
+	background:#fff;
+	width:100%;
+	margin:auto;
+	left:0;
+	top:277px;
+	height:300px;
+}
+.x_detailheader_left{
+	color:#ccc;
+	a{
+		padding-right:5px;
+	}
+	b{
+		color:#000;
+	}
+}
+.x_detailheader_right{
+	text-align:right;
+	a{
+		display:inline-block;
+		border:1px solid #ccc;
+		padding:8px 8px;
+		margin-right:2px;
+		color:#666b76;
+		font-size:12px;
+		&:hover{
+			color:white;
+			border:1px solid transparent;
+		}
+		&:nth-of-type(1):hover{
+			background:red;
+		}
+		&:nth-of-type(2):hover{
+			background:blue;
+		}
+		&:nth-of-type(3):hover{
+			background:pink;
+		}
+	}
+}
+.tit{
+	background:#f5f5f5;
+	border-bottom:1px solid #ccc;
+	height:70px;
+	line-height:70px;
+	padding-left:10px;
+	margin-bottom:10px;
+	cursor:pointer;
+	span{
+		width:30px;
+		display:inline-block;
+		height:30px;
+		vertical-align:middle;
+		background:#000;
+		color:#fff;
+		text-align:center;
+		line-height:30px;
+		margin-right:10px;
+		margin-left:10px;
+	}
+}
+.heading{
+	border:1px solid #ccc;
+	margin-top:10px;
+}
+.main-con1{
+	padding-left:10px;
+}
+.main-con{
+	padding-top:20px;
+	padding-bottom:20px;
+	p{
+		color:#666b76;
+	}
+	a{
+		background:#ccc;
+		color:#666b76;
+		display:block;
+		width:100px;
+		height:40px;
+	}
+}

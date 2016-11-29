@@ -1,0 +1,183 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+	
+}
+.product-tabs{
+	width:100%;
+	margin:10px auto;
+}
+ li{
+	list-style:none;
+}
+a{
+	outline:0;
+	text-decoration:none;
+	&:hover{
+		text-decoration:none;
+	}
+	&:active{
+		text-decoration:none;
+	}
+}
+@mixin pos($p:absolute){
+	position:$p;
+}
+.case-u{
+	text-transform:uppercase !important;
+}
+.tab-box{
+	width:100%;
+	border-bottom:1pxs solid #ccc;
+}
+.tab-content,.tab-pane,tab-no-borders{
+	padding:20px 0;
+	border:0;
+	background:none;
+}
+.tab-pane{
+	padding:20px;
+	border:1px solid #ddd;
+	margin-top:0;
+	background:#fff;
+}
+.nav_ul{
+	height:40px;
+	line-height:40px;
+	border-bottom:1px solid #ccc;
+	ul li{
+		float:left;
+		margin:0px 20px;
+		height:39px;
+		a{
+			text-decoration:none;
+			color:#000;
+		}
+	}
+	.active{
+		color:red;
+		border-bottom:2px solid red;
+	}
+}
+
+.product{
+	background:#fff;
+	@include pos(relative);
+	text-align:center;
+	margin:15px 0;
+}
+.image{
+	display:block;
+	@include pos(relative);
+	margin:0 0 20px 0;
+	.tit{
+		display:block;
+		@include pos;
+		left:0;
+		top:0;
+		color:#fff;
+		text-transform:uppercase;
+		padding:10px 13px;
+		z-index:100;
+	}
+	.label-sale{
+		background:#E95144;
+	}
+	a{
+		color:#E7214C;
+		img{
+			width:100%;
+			height:100%;
+			max-width:100%;
+			vertical-align:middle;
+			border:0;
+		}
+	}
+}
+.additional{
+	display:block;
+	background:#fff;
+	margin:0;
+	list-style:none;
+	padding:0;
+	height:auto;
+	@include pos;
+	top:0;
+	bottom:0;
+	width:100%;
+	opacity:0;
+	-webkit-transition:all 1s;
+	li{
+		width:50%;
+		height:50%;
+		float:left;
+		opacity:0.6;
+		img{
+			max-width:100%;
+			height:auto;
+			vertical-align:middle;
+		}
+	}
+}
+.details{
+	.title{
+		color:#131416;
+		font-family:"微软雅黑";
+		margin:0 0 10px 0;
+	}
+}
+.hlinks-rating {
+	text-align:center;
+	width:70px;
+	margin:5px auto;
+	li{
+		float:left;
+		text-align:center;
+		i{
+			color:#ccc;
+		}
+		&.active{
+			i{
+				color:#ffc60a;
+			}
+		}
+	}
+}
+.desc{
+	clear:both;
+}
+.tab-content>.active{
+	display:block;
+	visibility: visible;
+}
+.tab-content>.pane{
+	display:none;
+	visibility: hidden;
+}
+.price-box{
+	clear:both;
+	.price{
+		color:#ea4368;
+		&:nth-of-type(1){
+			color:#939393;
+			margin-right:10px;
+			text-decoration:line-through;
+		}
+	}
+	
+}
+.btn-group{
+	@include pos(relative);
+	display:inline-block;
+	vertical-align:middle;
+	margin-top:5px;
+	a{
+		border:1px solid #ccc;
+		color:#333;
+		&:nth-of-type(1):hover{
+			background:#333;
+			color:#fff;
+		}
+	}
+}

@@ -1,0 +1,169 @@
+<div class="container">
+	<!-- 头部 -->
+	<div class="head">
+		<div class="home row">
+			<div class="col-md-3 ipt">
+				<input type="text" placeholder="search">
+				<img src="img/ysn_21.jpg" class="search">
+			</div>
+			<div class="col-md-5 mid">
+				<a ui-sref="content.detailindex"><img src="img/logo(1).png"></a>
+			</div>
+			<div class="col-md-4 row sign" hover-li>
+				<div class="col-md-6" id="SignIn" click-li>
+					<img src="img/ysn_22.jpg" class="img">
+					<p>SIGN IN<span style="font-size:12px;margin-left:5px">∨</span></p>
+				</div>
+				<div class="col-md-6" id="SignUp" click-li>
+					<img src="img/ysn_23.jpg" class="img">
+					<p>SIGN UP<span style="font-size:12px;margin-left:5px">∨</span></p>
+				</div>
+			</div>
+			<div class="y_show">
+				<div class="IN">
+					<p style="margin-top:10px;margin-right:10px;">
+						<img src="img/ysn_26.jpg">
+						<input type="email" placeholder="Email" style="border:none;height:30px;">
+					</p>
+					<p>
+						<img src="img/ysn_27.jpg">
+						<input type="password" placeholder="Password" style="border:none;height:30px;">
+					</p>
+					<p style="border:none;">
+						<input type="checkbox">remember me
+					</p>
+					<button>Sign In</button>
+				</div>
+				<div class="UP">
+						<p style="margin-top:10px;margin-right:10px;">
+							<img src="img/ysn_26.jpg">
+							<input type="email" placeholder="Email" style="border:none;height:30px;">
+						</p>
+						<p>
+							<img src="img/ysn_27.jpg">
+							<input type="password" placeholder="Password" style="border:none;height:30px;">
+						</p>
+						<p>
+							<img src="img/ysn_27.jpg">
+							<input type="password" placeholder="Repeat Password" style="border:none;height:30px;">
+						</p>
+						<p style="border:none;">
+							<input type="checkbox">remember me
+						</p>
+						<button>Sign Up</button>
+				</div>
+			</div>
+		</div>
+		<div class="nav row">
+			<div class="col-md-3">
+				<img src="img/us.gif" style="float:left;margin-right:10px;margin-top:17px">
+				<p class="nav_p" hover-li><a href="javascript:void(0)">USD<span style="font-size:12px;margin-left:5px">∨</span></a></p>
+			</div>
+			<div class="col-md-7 hover" style="text-align:center" hover-li>
+				<ul>
+					<li class="red">Home</li>
+					<li class="pag" click-li>Pages<span style="font-size:12px;margin-left:5px">∨</span></li>
+					<li>Headers</li>
+					<li>Footers</li>
+					<li class="feats">Features<span style="font-size:12px;margin-left:5px">∨</span></li>
+				</ul>
+			</div>
+			<div class="col-md-2 box">
+				<p><b>+</b></p>
+				<p style="border-left:none;"><img src="img/ysn_25.jpg"></p>
+			</div>
+		</div>
+		<ul class="fea" click-li>
+			<li><a ui-sref="content.ysn">Elements+Modules</a></li>
+			<li><a ui-sref="content.ysn2">Sliders</a></li>
+			<li><a ui-sref="content.ysn3">Animations</a></li>
+		</ul>
+		<div class="page row" id="page" hover-li>
+			<div class="col-md-3">
+				<img src="img/menu-pic.jpg" class="col-md-12">
+			</div>
+			<div class="col-md-3">
+				<p>SHOP PAGES</p>
+				<ul click-a>
+					<li class="color"><a ui-sref="content.blog">blog</a></li>
+					<li><a ui-sref="content.typicalpage">typicalpage</a></li>
+					<li><a ui-sref="content.singlepost">singlepost</a></li>
+					<li>Checkout</li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<p>SHOP PAGES</p>
+				<ul>
+					<li>Category</li>
+					<li>Category #2</li>
+					<li>Cart</li>
+					<li>Checkout</li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<p>SHOP PAGES</p>
+				<ul>
+					<li>Category</li>
+					<li>Category #2</li>
+					<li>Cart</li>
+				</ul>
+			</div>
+		</div> 
+	</div>
+	<!-- 中间内容 -->
+	<div ui-view class="con"></div>
+	<!-- 脚部 -->
+	<div class="footer row" style="margin-top:20px;">
+		<div class="col-md-3" style="border-right:1px solid #ccc">
+			<a href="#">
+				<img src="img/logo-footer.png">
+			</a>
+			</div>
+			<div class="col-md-9 row" >
+				<div class="col-md-6 col-sm-6">
+					<h5>ABOUT US</h5>
+					<p>Helena is a freelance fashion designer who specialises in print designs and combining fabrics. My designs have been sold all over the world.</p>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<h5>MEMBER</h5>
+					<ul>
+						<li>Account</li>
+						<li>Wishlist and Favourites</li>
+						<li>Purchase History</li>
+						<li>View Cart</li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<h5>SOME GALLERY</h5>
+						<div>
+							<ul class="row">
+								<li class="col-md-4"><img src="img/ysn_12.jpg"></li>
+								<li class="col-md-4"><img src="img/ysn_13.jpg"></li>
+								<li class="col-md-4"><img src="img/ysn_14.jpg"></li>
+							</ul>
+							<ul class="row">
+								<li class="col-md-4"><img src="img/ysn_15.jpg"></li>
+								<li class="col-md-4"><img src="img/ysn_16.jpg"></li>
+								<li class="col-md-4"><img src="img/ysn_17.jpg"></li>
+							</ul>
+							<ul class="row">
+								<li class="col-md-4"><img src="img/ysn_18.jpg"></li>
+								<li class="col-md-4"><img src="img/ysn_19.jpg"></li>
+								<li class="col-md-4"><img src="img/ysn_20.jpg"></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+			</div>
+			<div class="foot-nav col-md-12" style="margin-top:30px;">
+				<p>? 2015 Your Corporation. Theme by Rahisi Themes.</p>
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Login</a></li>
+					<li><a href="#">Sign Up</a></li>
+					<li><a href="#">Support</a></li>
+				</ul>
+			</div>
+	</div>
+</div>
+

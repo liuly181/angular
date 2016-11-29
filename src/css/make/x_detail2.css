@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer; }
+
+a:hover {
+  text-decoration: none; }
+
+b {
+  font-weight: normal; }
+
+ul, ol li {
+  list-style: none; }
+
+.x_detailcontainer {
+  margin: 0px auto;
+  height: 1000px;
+  position: relative; }
+
+.x_detailheader {
+  height: 55px;
+  line-height: 55px;
+  overflow: hidden;
+  font-size: 14px;
+  margin-bottom: 20px; }
+
+.x_detailheader_left {
+  color: #ccc;
+  font-size: 14px; }
+  .x_detailheader_left a {
+    padding-right: 5px; }
+  .x_detailheader_left b {
+    color: #000; }
+
+.x_des_review {
+  padding-bottom: 20px;
+  margin-top: 40px; }
+
+.des_con {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc; }
+
+.x_detailheader_right {
+  text-align: right; }
+  .x_detailheader_right a {
+    display: inline-block;
+    color: #666b76;
+    border: 1px solid #ccc;
+    padding: 8px 8px;
+    margin-right: 2px;
+    font-size: 12px; }
+    .x_detailheader_right a:hover {
+      color: white;
+      border: 1px solid transparent; }
+    .x_detailheader_right a:nth-of-type(1):hover {
+      background: red; }
+    .x_detailheader_right a:nth-of-type(2):hover {
+      background: blue; }
+    .x_detailheader_right a:nth-of-type(3):hover {
+      background: pink; }
+
+.des_con_left {
+  text-align: center; }
+
+.des_con_imgbox {
+  clear: both;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 10px; }
+
+.des_con_imgs {
+  width: 600%;
+  height: 120px;
+  overflow: hidden; }
+  .des_con_imgs li {
+    float: left;
+    padding-right: 15px;
+    width: 108px;
+    height: 120px; }
+  .des_con_imgs img {
+    width: 100%;
+    height: 100%;
+    float: left; }
+
+.des_con_left ol {
+  width: 300%; }
+  .des_con_left ol li {
+    float: left;
+    width: 30%; }
+    .des_con_left ol li img {
+      width: 100%; }
+
+.des_con_imgleft {
+  width: 20px;
+  background: red;
+  height: 120px;
+  position: absolute;
+  color: #fff;
+  left: 0;
+  top: 0;
+  background: #e7214c;
+  line-height: 115px;
+  cursor: pointer;
+  z-index: 100; }
+
+.des_con_imgright {
+  cursor: pointer;
+  line-height: 115px;
+  width: 20px;
+  background: red;
+  color: #fff;
+  height: auto;
+  height: 120px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #2a2b2c;
+  z-index: 100; }
+
+.bx-wrapper img {
+  max-width: 100%;
+  display: block;
+  line-height: 1; }
+
+.fillw {
+  width: 100%;
+  height: auto; }
+
+.bx-controls-direction a {
+  height: 100%;
+  margin: 0;
+  width: 25px;
+  display: block; }
+
+.bx-controls-direction a.bx-prev {
+  right: -25px;
+  background: rgba(19, 20, 22, 0.9);
+  font-size: 17px; }
+
+.bx-controls-direction a.bx-next {
+  left: -25px;
+  background: #E7214C; }
+
+.main-slider {
+  height: 745px; }
+
+.bx-wrapper {
+  max-width: 100%; }
+
+.bx-controls-box {
+  margin-top: 10px;
+  position: relative; }
+
+.bx-wrapper {
+  max-width: 500px;
+  margin: 0;
+  padding: 0; }
+
+.bx-viewport {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.bx-controls {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+
+.bxslider li {
+  float: left;
+  list-style: none;
+  width: 160px;
+  margin-right: 10px; }
+
+.bx-clone {
+  float: left;
+  list-style: none;
+  position: relative;
+  width: 100%; }
+
+.des_conright {
+  margin-left: 20px; }
+  .des_conright h2 {
+    font-size: 22px;
+    font-weight: 600; }
+  .des_conright h3 {
+    font-size: 22px;
+    color: #e7214c;
+    font-weight: 600; }
+  .des_conright h5 {
+    font-size: 18px;
+    line-height: 40px; }
+
+.des_conright_tit1 {
+  font-size: 14px; }
+  .des_conright_tit1 span {
+    color: #e6e6e6;
+    cursor: pointer;
+    margin-right: 2px; }
+    .des_conright_tit1 span.staron {
+      color: #e7214c; }
+    .des_conright_tit1 span:hover {
+      color: #e7214c; }
+
+.des_conright_tit2 {
+  border: 1px solid #ccc;
+  margin-top: 8px; }
+  .des_conright_tit2 h4 {
+    border-bottom: 1px solid #ccc;
+    line-height: 40px;
+    padding-left: 10px;
+    background: #f5f5f5;
+    cursor: pointer;
+    margin: 0; }
+    .des_conright_tit2 h4:hover {
+      color: #e7214c; }
+  .des_conright_tit2 p {
+    line-height: 25px;
+    padding-left: 10px; }
+
+.tit {
+  border: 1px solid #ccc;
+  line-height: 40px;
+  padding-left: 10px;
+  background: #f5f5f5;
+  cursor: pointer; }
+  .tit:hover {
+    color: #e7214c; }
+
+.des_conright_sel span {
+  background: #dee0e3;
+  line-height: 27px;
+  text-align: center;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-right: none;
+  color: #b1b3b5; }
+.des_conright_sel div {
+  margin-top: 10px; }
+  .des_conright_sel div select {
+    height: 30px; }
+
+.des_con_btn {
+  width: 200px;
+  height: 40px;
+  display: block;
+  background: #dee0e3;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin-top: 15px;
+  cursour: pointer; }
+  .des_con_btn i {
+    padding-right: 10px;
+    color: #b1b3b5; }
+
+.x_des_releft h2 {
+  color: #787b80;
+  font-size: 22px; }
+
+.x_des_redd b {
+  font-size: 15px;
+  color: #545556;
+  font-weight: 600; }
+.x_des_redd span {
+  text-align: right;
+  color: #cfcfcf;
+  line-height: 25px; }
+.x_des_redd p:nth-of-type(1) {
+  color: #e6e6e6; }
+  .x_des_redd p:nth-of-type(1) span {
+    cursor: pointer; }
+  .x_des_redd p:nth-of-type(1) span:hover {
+    color: #ffc60a; }
+  .x_des_redd p:nth-of-type(1) .staron1 {
+    color: #ffc60a; }
+.x_des_redd p:nth-of-type(2) {
+  line-height: 25px; }
+
+.x_des_redl {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc; }
+
+.x_des_txt2 {
+  height: 40px;
+  margin-bottom: 10px; }
+
+.x_des_btn {
+  border: 1px solid #ccc;
+  background: #dee0e3;
+  height: 50px;
+  margin-top: 10px;
+  color: #4e5258; }
+
+.x_des_area {
+  padding-top: 10px; }
+
+.x_des_reright_tit1 {
+  background: #42464d;
+  color: #fff;
+  height: 50px;
+  line-height: 50px; }
+  .x_des_reright_tit1 b {
+    font-size: 14px; }
+  .x_des_reright_tit1 a {
+    font-size: 20px; }
+
+.carousel-ol {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+  .carousel-ol li {
+    width: 50%;
+    float: left; }
+    .carousel-ol li img {
+      width: 100%;
+      float: left; }
+
+/*.carousel-mark{
+	width:50%;
+	height:50%;
+	background:#fff;
+	@include pos;
+	left:0;
+	top:0;
+	opacity:0.5;
+	display:none;
+	z-index:100;
+}*/

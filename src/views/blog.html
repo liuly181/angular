@@ -1,0 +1,99 @@
+	<div class="wd_contain">
+			<!-- <div class="wd_bg"></div>  -->
+			<div class="wd_con">
+				<div class="wd_banner_opa">
+					<div class="wd_txt">
+						<p>BLOG&nbsp;HOME</p>
+						<div class="wd_line"></div>
+						<p>Helena is a freelance fashion house specialiasing in print designs and combining</br>fabrics. Our stores can be found all over the world.</p>
+					</div>
+				</div>
+				<div class="wd_list">
+					<ul>
+						<li><a href="#" class="glyphicon glyphicon-home">&nbsp;》</a></li>
+						<li><a href="#">PAGES&nbsp;》</a></li>
+						<li><a href="#">OTHER&nbsp;》</a></li>
+						<li><a href="#">BLOG</a></li>
+					</ul>
+					<ol>
+						<li><a href="#" class="glyphicon glyphicon-cog"></a></li>
+						<li><a href="#" class="glyphicon glyphicon-trash"></a></li>
+						<li><a href="#" class="glyphicon glyphicon-home"></a></li>
+					</ol>
+				</div>
+				<div class="wd_boot_box" id="row" ng-controller="render_1">
+					<div class="wd_boot_left col-md-8">
+						<div class="wd_left_box1" ng-repeat="i in jsonLeft">
+							<div class="wd_img">
+								<img src="{{i.img}}">
+							</div>
+							<h2>{{i.title}}</h2>
+							<div class="wd_msg">
+								<ul>
+									<li ng-repeat="j in i.list"><a href="">{{j}}</a></li>
+								</ul>
+							</div>
+							<div>
+								<p class="wd_read_txt">{{i.paragraph}}</p>
+								<div class="wd_readMore">Read More</div>
+							</div>
+						</div>			
+						<div class="wd_pageBreak">
+							<ul>
+								<li class="wd_begin"><a href="#">》</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li class="wd_end"><a href="#">》</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="wd_boot_right col-md-4">
+						<div class="wd_pageTopics">
+							<div class="wd_tit">
+								PAGE TOPICE
+							</div>
+							<ul class='ulList'>
+								<li ng-repeat="i in jsonRight">
+									<a href="javascript:void(0)" ng-click="showOl()">
+										{{i.title}}
+										<span></span>
+									</a>
+									<ol ng-show="flag">
+										<li ng-repeat="j in i.content"><a href="#">{{j}}</a></li>
+									</ol>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										Our portfolio
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										Price Plans
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="wd_recentPosts">
+							<div class="wd_tit">
+								RECENT POSTS
+							</div>
+							<dl ng-repeat="i in jsonDl">
+								<dt>
+									<img src="{{i.img}}" alt="">
+								</dt>
+								<dd>
+									<a href="#">{{i.title}}</a>
+									<p>{{i.time}}</p>
+								</dd>
+							</dl>
+						</div>		
+					</div>
+				</div>
+			</div>
+	</div>	
+	<!-- http://wrapbootstrap.com/preview/WB049G842 -->
+

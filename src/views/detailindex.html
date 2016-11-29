@@ -1,0 +1,274 @@
+<div class="product-tabs" ng-controller="x_index">
+	<div id="slidershow" class="carousel slide photo" slide-li>
+		 <!-- 设置图片轮播的顺序 -->
+		 <ol class="carousel-indicators">
+			 <li class="active" data-target="#slidershow" data-slide-to="0"></li>
+			 <li data-target="#slidershow" data-slide-to="1"></li>
+			 <li data-target="#slidershow" data-slide-to="2"></li>
+		 </ol>
+		 <!-- 设置轮播图片 -->
+		 <div class="carousel-inner">
+			 <div class="item active">
+			 	<a href="##"><img src="img/slide1.jpg"></a>
+			 </div>
+		 	<div class="item">
+		 		<a href="##"><img src="img/slide2.jpg"></a>
+		 	</div>
+			<div class="item">
+				<a href="##"><img src="img/slide3.jpg"></a>
+			</div>
+		 </div>
+		 <a class="left carousel-control" href="#slidershow" role="button" style="background: none">
+		 <span class="glyphicon glyphicon-chevron-left"></span>
+		 </a>
+		 <a class="right carousel-control" href="#slidershow" role="button" style="background: none">
+		 <span class="glyphicon glyphicon-chevron-right"></span>
+		 </a>
+		</div>
+	<!-- 导航 -->
+	<div class="nav_ul row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6 nav-ul" hover-li>
+			<ul class="case-u" role="tablist" id="tabs" tab-img style="text-align: center;">
+		        <li class="active"><a href="#tab-latest" data-toggle="tab" aria-expanded="true">latest</a></li>
+		        <li><a href="#tab-featured" data-toggle="tab" aria-expanded="false">featured</a></li>
+		        <li><a href="#tab-trending" data-toggle="tab" aria-expanded="false">trending</a></li>
+		    </ul>
+		</div>
+		<div class="col-md-3"></div>
+	</div> 
+		<div class="tab-content tab-no-borders">
+		<!-- 产品一 -->
+			
+			<div class="tab-pane active" id="tab-latest">
+				<div class="row">
+
+					<div class="col-sm-6 col-md-3" ng-repeat="x in product">
+							<div class="product clearfix">
+							<!-- image -->
+						
+								<div class="image carousel-item" hover-img>
+									<a class="main">
+										<img src="{{x.img}}" alt="" class='carousel-img'>
+									</a>
+									<a  ui-sref="content.detail2">
+									<ul class="additional carousel-ol">
+										<li><img src="{{x.img}}" alt=""></li>
+										<li><img src="{{x.img}}" alt=""></li>
+										<li><img src="{{x.img}}" alt=""></li>
+										<li><img src="{{x.img}}" alt=""></li>
+									</ul>
+									</a>
+								</div>
+							
+								
+								<!-- <span class="tit">sale</span> -->
+								<!-- details -->
+								<div class="details">
+									<a ui-sref="content.detail2" class="title">{{x.name}}</a>
+									<!-- star -->
+									<ul class="hlinks hlinks-rating">
+										<li class="active">
+											<a href="#">
+												<i class="icon glyphicon glyphicon-star"></i>
+											</a>
+										</li>
+										<li class="active">
+											<a href="#">
+												<i class="icon glyphicon glyphicon-star"></i>
+											</a>
+										</li>
+										<li class="active">
+											<a href="#">
+												<i class="icon glyphicon glyphicon-star"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="icon glyphicon glyphicon-star"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="icon glyphicon glyphicon-star"></i>
+											</a>
+										</li>
+									</ul>
+								
+									<!-- price-box -->
+									<div class="price-box">
+	                    				<span class="price" ng-repeat="j in x.price">{{j}}</span>
+	                       			</div>
+	                       <!--  button -->
+	                        <div class="btn-group">
+	                          <a class="btn btn-outline btn-base-hover"  ui-sref="content.detail1">add to cart</a>	
+	                          <a class="btn btn-outline btn-default-hover" ui-sref="content.detail2"><i class="glyphicon glyphicon-heart"></i></a>
+	                        </div>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		<!-- 产品二 -->
+			<div class="tab-pane pane" id="tab-featured">
+				<div class="row">
+					<div class="col-sm-6 col-md-3" ng-repeat="x in product2">
+							<div class="product clearfix">
+							<!-- image -->
+								<div class="image carousel-item" hover-img>
+									<a href="product.html" class="main">
+										<img src="{{x.img}}" alt="" class='carousel-img'>
+									</a>
+									<a  ui-sref="content.detail2">
+										<ul class="additional carousel-ol">
+											<li><img src="{{x.img}}" alt=""></li>
+											<li><img src="{{x.img}}" alt=""></li>
+											<li><img src="{{x.img}}" alt=""></li>
+											<li><img src="{{x.img}}" alt=""></li>
+										</ul>
+									</a>
+								</div>
+								<!-- <span class="tit">sale</span> -->
+								<!-- details -->
+								<div class="details">
+									<a href="product.html" class="title">{{x.name}}</a>
+									<!-- star -->
+									<ul class="hlinks hlinks-rating">
+										<li class="active">
+											<a href="#">
+												<i class="icon glyphicon glyphicon-star"></i>
+											</a>
+										</li>
+										<li class="active">
+											<a href="#">
+												<i class="icon glyphicon glyphicon-star"></i>
+											</a>
+										</li>
+										<li class="active">
+											<a href="#">
+												<i class="icon glyphicon glyphicon-star"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="icon glyphicon glyphicon-star"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="icon glyphicon glyphicon-star"></i>
+											</a>
+										</li>
+									</ul>
+								
+									<!-- price-box -->
+									<div class="price-box">
+	                    				<span class="price" ng-repeat="j in x.price">{{j}}</span>
+	                       			</div>
+	                       <!--  button -->
+	                        <div class="btn-group">
+	                          <a class="btn btn-outline btn-base-hover"  ui-sref="content.detail1">add to cart</a>	
+	                          <a class="btn btn-outline btn-default-hover" ui-sref="content.detail2"><i class="glyphicon glyphicon-heart"></i></a>
+	                        </div>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		<!-- 产品三 -->
+			<div class="tab-pane pane" id="tab-trending">
+				<div class="row">
+					<div class="col-sm-6 col-md-3" ng-repeat="q in product3">
+							<div class="product clearfix">
+							<!-- image -->
+								<div class="image carousel-item" hover-img>
+									<a href="product.html" class="main">
+										<img src="{{q.img}}" alt="" class='carousel-img'>
+									</a>
+									<a  ui-sref="content.detail2">
+										<ul class="additional carousel-ol">
+											<li><img src="{{q.img}}" alt=""></li>
+											<li><img src="{{q.img}}" alt=""></li>
+											<li><img src="{{q.img}}" alt=""></li>
+											<li><img src="{{q.img}}" alt=""></li>
+										</ul>
+									</a>
+								</div>
+								<!-- <span class="tit">sale</span> -->
+								<!-- details -->
+								<div class="details">
+									<a href="product.html" class="title">{{q.name}}</a>
+									<!-- star -->
+									<ul class="hlinks hlinks-rating">
+										<li class="active">
+											<a href="#">
+												<i class="icon glyphicon glyphicon-star"></i>
+											</a>
+										</li>
+										<li class="active">
+											<a href="#">
+												<i class="icon glyphicon glyphicon-star"></i>
+											</a>
+										</li>
+										<li class="active">
+											<a href="#">
+												<i class="icon glyphicon glyphicon-star"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="icon glyphicon glyphicon-star"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="icon glyphicon glyphicon-star"></i>
+											</a>
+										</li>
+									</ul>
+								
+									<!-- price-box -->
+									<div class="price-box">
+	                    				<span class="price" ng-repeat="j in q.price">{{j}}</span>
+	                       			</div>
+	                       <!--  button -->
+	                        <div class="btn-group">
+	                          <a class="btn btn-outline btn-base-hover"  ui-sref="content.detail1">add to cart</a>	
+	                          <a class="btn btn-outline btn-default-hover" ui-sref="content.detail2"><i class="glyphicon glyphicon-heart"></i></a>
+	                        </div>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+
+<!-- 产品名称：i.name
+图片：i.img
+标题：i.title
+星级:
+价格：ng-repeat="j in i.price" -->
+<!-- <div class="product clearfix text-center" ng-repeat="i in product">
+	image
+	<div class="image">
+		<a href="product.html" class="main">
+			<img src="{{i.img}}">
+		</a>
+	</div>
+<div class="details">
+	<a href="product.html" class="title">{{i.name}}</a>
+		star
+		<ul class="hlinks hlinks-rating">
+			<li class="active" ng-repeat="k in i.star">
+				<a href="#">
+				   <i class="icon glyphicon glyphicon-star"></i>
+				</a>
+			</li>	
+		</ul>
+	price-box
+	<div class="price-box">
+		<span ng-repeat="j in i.price">{{j}}</span>
+    </div>
+</div>
+</div> -->

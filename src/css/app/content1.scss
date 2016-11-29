@@ -1,0 +1,168 @@
+*{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border-box;
+}
+body{
+	background:url(../../img/big_bg.png);
+}
+@mixin pos($pos:absolute){
+	position:$pos;
+}
+.container{
+	width:80%;
+	margin:auto;
+	background:#fff;
+	box-shadow:0 5px 10px #ccc;
+}
+.head{
+	z-index:100;
+	@include pos(relative);
+}
+.con{
+	width:100%;
+}
+.home{
+	width:100%;
+	margin-top:20px;
+	.ipt{
+		margin-top:40px;
+		input{
+			@include pos(relative);
+			padding:5px;
+		}
+		.search{
+			@include pos;
+			right:33%;
+			top:30%;
+		}
+	}
+	.mid{
+		text-align:center;
+	}
+	.sign{
+		margin-top:40px;
+		.img{
+			float:left;
+			margin-right:10px;
+		}
+	}
+}
+.nav{
+	height:50px;
+	line-height:50px;
+	margin-top:30px;
+	border:1px solid #ccc;
+	border-left:none;
+	border-right:none;
+	ul{
+		text-align:center;
+		margin-left:30px;
+		li{
+			float:left;
+			margin:0px 20px;
+		}
+		.red{
+			color:red;
+			border-top:2px solid red;
+		}
+	}
+	.box{
+		p{
+			border:1px solid #000;
+			float:left;
+			height:30px;
+			line-height:30px;
+			text-align:center;
+			width:50px;
+			margin-top:10px;
+			b{
+				font-size:24px;
+			}
+		}
+	}
+	
+}
+.fea{
+	@include pos;
+	left:58%;
+	z-index:10;
+	display:none;
+	li{
+		height:40px;
+		line-height:40px;
+		border:1px solid #ccc;
+		background:#fff;
+		padding:0px 5px;
+		border-top:none;
+		a{
+			text-decoration:none;
+		}
+	}
+}
+.page{
+	border:1px solid #ccc;
+	border-top:none;
+	//@include pos;
+	background:#fff;
+	padding-top:30px;
+	z-index:100;
+	margin:0;
+	display:none;
+	p{
+		background:#666666;
+		color:#fff;
+		height:40px;
+		line-height:40px;
+		text-align:center;
+	}
+	ul{
+		margin-top:20px;
+		li{
+			border-bottom:1px dotted #ccc;
+			height:40px;
+			line-height:40px;
+			padding-left:20px;
+			&:last-child{
+				border-bottom:none;
+			}
+		}
+		.color{
+			color:red;
+		}
+	}
+}
+.footer{
+	clear:both;
+	padding-top:50px;
+	background:#fff;
+	.so_ul li{
+		float:left;
+	}
+}
+.foot-nav{
+	height:50px;
+	line-height:50px;
+	background:#000;
+	color:#ccc;
+	p{
+		float:left;
+		margin-left:5%;
+	}
+	ul{
+		float:right;
+		margin-right:5%;
+		li{
+			float:left;
+			margin-left:5px;
+			height:80px;
+			a{
+				text-decoration:none;
+				&:hover{
+					color:#fff;
+				}
+			}
+		}
+	}
+}
+

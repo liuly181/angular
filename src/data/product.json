@@ -1,0 +1,180 @@
+{
+	"product":[
+		{	
+			"name":"Grey winter jacket",
+			"img":"img/product1.jpg",
+			"title":"SALE",
+			"star":{"h":[1,2,3],"b":[1,2]},
+			"price":["$2350","$1500"]
+		},
+		{	
+			"name":"Black lase blouse",
+			"img":"img/product2.jpg",
+			"title":"",
+			"star":3,
+			"price":["","$2600"]
+		},
+		{	
+			"name":"Chinese style coat",
+			"img":"img/product3.jpg",
+			"title":"POPULAR",
+			"star":3,
+			"price":["","$840"]
+		},
+		{	
+			"name":"Long striped dress",
+			"img":"img/product4.jpg",
+			"title":"",
+			"star":3,
+			"price":["","$1820"]
+		}, 
+		
+		{	
+			"name":"Srapless night dress",
+			"img":"img/product5.jpg",
+			"title":"",
+			"star":2,
+			"price":["","$675"]
+		},
+		{	
+			"name":"Gold detailed dress",
+			"img":"img/product6.jpg",
+			"title":"SALE",
+			"star":3,
+			"price":["","$1220"]
+		},
+		{	
+			"name":"One pice business suit",
+			"img":"img/product7.jpg",
+			"title":"SALE",
+			"star":0,
+			"price":["$2350","$1500"]
+		},
+		{	
+			"name":"One pice business suit",
+			"img":"img/product7.jpg",
+			"title":"SALE",
+			"star":0,
+			"price":["$3350","$2050"]
+		}
+	],
+	"product2":[
+		{	
+			"name":"Grey winter jacket",
+			"img":"img/product8.jpg",
+			"title":"SALE",
+			"star":3,
+			"price":["$2350","$1500"]
+		},
+		{	
+			"name":"Black lase blouse",
+			"img":"img/product7.jpg",
+			"title":"",
+			"star":3,
+			"price":["","$2600"]
+		},
+		{	
+			"name":"Chinese style coat",
+			"img":"img/product6.jpg",
+			"title":"POPULAR",
+			"star":3,
+			"price":["","$840"]
+		},
+		{	
+			"name":"Long striped dress",
+			"img":"img/product5.jpg",
+			"title":"",
+			"star":3,
+			"price":["","$1820"]
+		}, 
+		
+		{	
+			"name":"Srapless night dress",
+			"img":"img/product4.jpg",
+			"title":"",
+			"star":2,
+			"price":["","$675"]
+		},
+		{	
+			"name":"Gold detailed dress",
+			"img":"img/product3.jpg",
+			"title":"SALE",
+			"star":3,
+			"price":["","$1220"]
+		},
+		{	
+			"name":"One pice business suit",
+			"img":"img/product2.jpg",
+			"title":"SALE",
+			"star":0,
+			"price":["$2350","$1500"]
+		},
+		{	
+			"name":"One pice business suit",
+			"img":"img/product1.jpg",
+			"title":"SALE",
+			"star":0,
+			"price":["$3350","$2050"]
+		}
+	],
+	"product3":[
+		{	
+			"name":"Grey winter jacket",
+			"img":"img/product4.jpg",
+			"title":"SALE",
+			"star":3,
+			"price":["$2350","$1500"]
+		},
+		{	
+			"name":"Black lase blouse",
+			"img":"img/product3.jpg",
+			"title":"",
+			"star":3,
+			"price":["","$2600"]
+		},
+		{	
+			"name":"Chinese style coat",
+			"img":"img/product2.jpg",
+			"title":"POPULAR",
+			"star":3,
+			"price":["","$840"]
+		},
+		{	
+			"name":"Long striped dress",
+			"img":"img/product1.jpg",
+			"title":"",
+			"star":3,
+			"price":["","$1820"]
+		}, 
+		
+		{	
+			"name":"Srapless night dress",
+			"img":"img/product5.jpg",
+			"title":"",
+			"star":2,
+			"price":["","$675"]
+		},
+		{	
+			"name":"Gold detailed dress",
+			"img":"img/product6.jpg",
+			"title":"SALE",
+			"star":3,
+			"price":["","$1220"]
+		},
+		{	
+			"name":"One pice business suit",
+			"img":"img/product7.jpg",
+			"title":"SALE",
+			"star":0,
+			"price":["$2350","$1500"]
+		},
+		{	
+			"name":"One pice business suit",
+			"img":"img/product8.jpg",
+			"title":"SALE",
+			"star":0,
+			"price":["$3350","$2050"]
+		}
+	]
+
+}

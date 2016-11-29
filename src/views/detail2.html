@@ -1,0 +1,211 @@
+<div class="x_detailcontainer" ng-controller="detail2">
+	<div class="x_detailheader row">
+		<div class="col-md-6 x_detailheader_left">
+			<a href="#" class="glyphicon glyphicon-home"></a> >>
+			<a href="#">PAGES</a> >>
+			<a href="#">FEATUTES</a>
+		</div>
+		<div class="col-md-6 x_detailheader_right">
+			<a href="#" class="glyphicon glyphicon-camera"></a>
+			<a href="#" class="glyphicon glyphicon-heart-empty"></a>
+			<a href="#" class="glyphicon glyphicon-tree-conifer"></a>
+		</div>
+	</div>
+	<div class="row des_con">
+			<div class="col-md-5 des_con_left">
+				<div class="main-slider" click-img>
+			<!-- 大图 -->
+					<div class="bx-wrapper size-sm">
+						<div class="bx-viewport" style="max-width:100%;overflow: hidden;position: relative;height: 550px">
+							<ul class="bxslider slider-bigimg" style="width:615%;position: relative;">
+								<li class="bx-clone" style="float:left; list-style:none;position: relative;width:20%;">
+									<a href="#">
+										<img src="img/product1.jpg" alt="">
+									</a>
+								</li>
+								<li class="bx-clone" style="float:left; list-style:none;position: relative;width: 20%;">
+									<a href="#">
+										<img src="img/product2.jpg" alt="">
+									</a>
+								</li>
+								<li class="bx-clone" style="float:left; list-style:none;position: relative;width: 20%;">
+									<a href="#">
+										<img src="img/product3.jpg" alt="">
+									</a>
+								</li>
+								<li class="bx-clone" style="float:left; list-style:none;position: relative;width: 20%;">
+									<a href="#">
+										<img src="img/product4.jpg" alt="">
+									</a>
+								</li>
+							
+							</ul>
+						</div>
+					</div>
+			<!-- 小图 -->
+					<div class="thumb-slider bx-controls-box">
+						<div class="bx-wrapper size-sm">
+							<div class="bx-viewport" seam-less>
+								<ul id="thumb-pager" class="bxslider  slider-imgs" style="width: 615%;">
+									<li>
+										<img src="img/product1.jpg" alt="" class="fillw">
+									</li>
+									<li>
+										<img src="img/product2.jpg" alt="" class="fillw">
+									</li>
+									<li>
+										<img src="img/product3.jpg" alt="" class="fillw">
+									</li>
+									<li>
+										<img src="img/product4.jpg" alt="" class="fillw">
+									</li>
+								
+								</ul>
+							</div>
+							<div class="bx-controls">
+								<div class="bx-controls-direction">
+									<a class="bx-prev disabled" style="height:192px;position: absolute;top:0">></a>
+									<a class="bx-next disabled" style="height:192px;position: absolute;top:0"><</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="col-md-6 col-xs-7 col-sm-5 des_conright">
+				<div class="des_conright_tit1"><span class="staron">★</span><span class="staron">★</span><span class="staron">★</span><span>★</span><span>★</span>&nbsp&nbsp&nbsp26 REVIEW(S)</div>
+				<h2>Selected product title appears here</h2>
+				<h3>$560</h3>
+				<div class="des_conright_tit2">
+					<h4 ng-click="toggleMenu1()">Product Detail</h4>
+					<p ng-show='menuState1.show'>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+				</div>
+				<div class="des_conright_tit2">
+					<h4 ng-click="toggleMenu2()">Product Detail</h4>
+					<p ng-show='menuState2.show'>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+				</div>
+				<div class="des_conright_tit2">
+					<h4 ng-click="toggleMenu3()">Product Detail</h4>
+					<p ng-show='menuState3.show'>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+				</div>
+				<h5>Buy now</h5>
+
+				<div class="des_conright_sel row">
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<span class="glyphicon glyphicon-user col-md-2 col-sm-3 col-xs-3"></span>
+						<select name="" id="" class="col-md-10 col-sm-9 col-xs-9">
+							<option value="">Seclect Style</option>
+							<option value="Seclect Style">Italian</option>
+							<option value="Seclect Style">French</option>
+							<option value="Seclect Style">American</option>
+						</select>
+					</div>
+
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<span class="glyphicon glyphicon-user col-md-2 col-sm-3 col-xs-3"></span>
+						<select name="" id="" class="col-md-10 col-sm-9 col-xs-9">
+							<option value="">Seclect Quanity</option>
+							<option value="Seclect Style">2</option>
+							<option value="Seclect Style">3</option>
+							<option value="Seclect Style">4</option>
+							<option value="Seclect Style">5</option>
+						</select>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<span class="glyphicon glyphicon-user col-md-2 col-sm-3 col-xs-3"></span>
+						<select name="" id="" class="col-md-10 col-sm-9 col-xs-9">
+							<option value="">Seclect Size</option>
+							<option value="Seclect Style">Large</option>
+							<option value="Seclect Style">Medium</option>
+							<option value="Seclect Style">Small</option>
+						</select>
+					</div>
+					
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<span class="glyphicon glyphicon-user col-md-2 col-sm-3 col-xs-3"></span>
+						<select name="" id="" class="col-md-10 col-sm-9 col-xs-9">
+							<option value="">Seclect Color</option>
+							<option value="Seclect Style">Red</option>
+							<option value="Seclect Style">Orange</option>
+							<option value="Seclect Style">Yellow</option>
+							<option value="Seclect Style">Green</option>
+						</select>
+					</div>
+				</div>
+				<a class="btn primary des_con_btn" ui-sref="content.detail1"><i class="glyphicon glyphicon-glass"></i>Add To Cart</a>
+			</div>
+	</div>	
+	<div class="row x_des_review">
+		<div class="col-md-8 x_des_releft col-sm-7 col-xs-7">
+			<h2>reviews<span ng-model="nums">(4)</span></h2>
+			<div id="dl_mes" >
+				<dl class="row x_des_redl">
+					<dt class="col-md-2 col-sm-2 col-xs-2">
+						<img src="img/x_user1.png" alt="" class="col-md-12 col-sm-12 col-xs-12">
+					</dt>
+					<dd class="col-md-10 col-sm-10 col-xs-10 x_des_redd">
+						<div class="row">
+							<b class="col-md-4">Sean Carter</b>
+							<span class="col-md-8">Feb 16th,2015 10:14 am</span>
+						</div>
+						<p><span class="staron1">★</span><span class="staron1">★</span><span class="staron1">★</span><span>★</span><span>★</span></p>
+						<p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words</p>
+					</dd>
+				</dl>
+				<dl class="row x_des_redl">
+					<dt class="col-md-2 col-sm-2 col-xs-2">
+						<img src="img/x_user1.png" alt="" class="col-md-12 col-sm-12 col-xs-12">
+					</dt>
+					<dd class="col-md-10 col-sm-10 col-xs-10 x_des_redd">
+						<div class="row">
+							<b class="col-md-4">{{name}}</b>
+							<span class="col-md-8">Feb 16th,2015 10:14 am</span>
+						</div>
+						<p><span class="staron1">★</span><span class="staron1">★</span><span class="staron1">★</span><span>★</span><span>★</span></p>
+						<p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words</p>
+					</dd>
+				</dl>
+			</div>
+			<h4>Add Comment</h4>
+			<form action="" ng-submit="getData()" name="postData">
+				<input type="text" class="col-md-6 x_des_txt2" ng-model="data.name" placeholder="Your Name-Required" required="" ng-minlength="6">
+				<div class="col-md-1"></div>
+				<input type="text" class="col-md-5 x_des_txt2" ng-model="data.email" placeholder="Your Email-Required" required="">
+				<textarea name="" id="" cols="30" rows="10" ng-model="data.message" class="col-md-12 x_des_area" placeholder="You Message" required=""></textarea>
+				<button class="col-md-4 x_des_btn" ng-disabled="postData.$invalid">Submit Comment</button>
+			</form>
+		</div>
+		<div class="col-md-1 col-sm-1 col-xs-1"></div>
+			<div class="col-md-3 col-sm-4 col-xs-4 x_des_reright carousel slide" id="myCarousel">
+				<div class="x_des_reright_tit1 col-md-12">
+					<b style="float: left;">SIMLAR PRODUCTS</b>
+					<p style="float: right;">
+						<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+   						<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+					</p>
+				</div>
+				<ul style="margin: 0;padding:0" class="carousel-inner carousel-box" hover-img>
+					 <li class="item active carousel-item">
+					 	<img src="img/x_rightimg1.png" alt="" class="carousel-img col-md-12" style="margin: 0;padding: 0">
+					 	 <ol class="row carousel-ol">
+					 		<li><img src="img/x_rightimg1.png" alt=""></li>
+					 		<li><img src="img/x_rightimg1.png" alt=""></li>
+					 		<li><img src="img/x_rightimg1.png" alt=""></li>
+					 		<li><img src="img/x_rightimg1.png" alt=""></li>
+					 	</ol> 
+					 	<p>dndcdnvkdnk</p>
+     				 </li>
+      				<li class="item">
+        				 <img src="img/product1.jpg" alt="" >
+        				 <p>dndcdnvkdnk</p>
+    				</li>
+      				<li class="item">
+         				 <img src="img/product2.jpg" alt="" >
+         				 <p>dndcdnvkdnk</p>
+     				 </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+

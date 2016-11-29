@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+ul, ol li {
+  list-style: none; }
+
+.ysn {
+  padding: 50px; }
+
+.home {
+  margin-top: 30px; }
+  .home .ipt {
+    margin-top: 40px; }
+    .home .ipt input {
+      position: relative;
+      padding: 5px; }
+    .home .ipt .search {
+      position: absolute;
+      right: 33%;
+      top: 30%; }
+  .home .mid {
+    text-align: center; }
+  .home .sign {
+    margin-top: 40px; }
+    .home .sign .img {
+      float: left;
+      margin-right: 10px; }
+
+.nav {
+  height: 50px;
+  line-height: 50px;
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none; }
+  .nav ul {
+    text-align: center;
+    margin-left: 30px; }
+    .nav ul li {
+      float: left;
+      margin: 0px 17px; }
+    .nav ul .red {
+      color: red;
+      border-top: 2px solid red; }
+  .nav .box p {
+    border: 1px solid #000;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 50px;
+    margin-top: 10px; }
+    .nav .box p b {
+      font-size: 24px; }
+
+.fea {
+  position: absolute;
+  left: 58%;
+  z-index: 10;
+  display: none; }
+  .fea li {
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 0px 5px;
+    border-top: none; }
+    .fea li a {
+      text-decoration: none; }
+
+.page {
+  border: 1px solid #ccc;
+  border-top: none;
+  background: #fff;
+  padding-top: 30px;
+  z-index: 100;
+  margin: 0;
+  display: none; }
+  .page p {
+    background: #666666;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    text-align: center; }
+  .page ul {
+    margin-top: 20px; }
+    .page ul li {
+      border-bottom: 1px dotted #ccc;
+      height: 40px;
+      line-height: 40px;
+      padding-left: 20px; }
+      .page ul li:last-child {
+        border-bottom: none; }
+    .page ul .color {
+      color: red; }
+
+.ysn_elements {
+  margin-top: 20px; }
+  .ysn_elements .ysn_uls {
+    position: relative; }
+    .ysn_elements .ysn_uls li {
+      border: 1px solid #ccc;
+      height: 50px;
+      line-height: 50px;
+      border-top: none;
+      overflow: hidden;
+      color: #666666; }
+      .ysn_elements .ysn_uls li b {
+        margin-left: 5%;
+        margin-right: 10px; }
+      .ysn_elements .ysn_uls li span {
+        float: right;
+        margin-right: 5%;
+        font-size: 24px; }
+    .ysn_elements .ysn_uls .red {
+      color: red; }
+    .ysn_elements .ysn_uls .line {
+      width: 3px;
+      height: 25px;
+      background: red;
+      border: none;
+      display: block;
+      float: left;
+      position: absolute;
+      top: 12px;
+      display: none; }
+
+.footer .so_ul li {
+  float: left; }
+
+.foot-nav {
+  height: 50px;
+  line-height: 50px;
+  background: #000;
+  color: #ccc; }
+  .foot-nav p {
+    float: left;
+    margin-left: 5%; }
+  .foot-nav ul {
+    float: right;
+    margin-right: 5%; }
+    .foot-nav ul li {
+      float: left;
+      margin: 0px 10px; }
+      .foot-nav ul li a {
+        text-decoration: none; }
+        .foot-nav ul li a:hover {
+          color: #fff; }
